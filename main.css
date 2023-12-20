@@ -123,6 +123,8 @@ body {
         gap: 1.5rem; }
         .header .hero_section .widgets .right_section i {
           font-size: 2rem; }
+          .header .hero_section .widgets .right_section i:nth-child(2) {
+            color: #43946C; }
     .header .hero_section .heading_title {
       font-size: 4rem;
       font-family: 'Roboto', sans-serif;
@@ -185,7 +187,6 @@ body {
     .header .hero_section .form_section .p_option_input {
       font-size: 1.6rem;
       color: #212936;
-      font-weight: 600;
       width: 100%; }
     .header .hero_section .form_modal {
       border: 1px solid #F3F4F6;

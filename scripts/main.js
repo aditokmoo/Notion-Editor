@@ -14,14 +14,14 @@ form_input.addEventListener('input', (e) => {
         // Activate modal
 		modalTheme(heading_options, e.target.value);
         // Handle click on option
-        handleOptionClick(heading_options, 'input', 'text', 'h1_option_input', 'heading_input', 'Heading 1', 'h1');
+        handleOptionClick(heading_options, 'input', 'text', 'h1_option_input', 'heading_input', 'h1');
 	} else if (e.target.value === '/+1') {
         // Show modal
 		form_modal.className = 'form_modal active';
         // Activate modal
 		modalTheme(paragraph_options, e.target.value);
         // Handle click on option
-        handleOptionClick(paragraph_options, 'input', 'text', 'p_option_input', 'paragraph_input', 'Paragraph 1', 'p')
+        handleOptionClick(paragraph_options, 'input', 'text', 'p_option_input', 'paragraph_input', 'p')
 	} else {
 		form_modal.className = 'form_modal';
 	}
@@ -34,7 +34,9 @@ form_input.addEventListener('keydown', (e) => {
             // Create input on shortcut
             createInput('input', 'text', 'h1_option_input', 'heading_input', 'Heading 1', 'h1')
             // Set created input to be focued
-            document.getElementById('heading_input').focus();
+            let newElement = document.getElementById('heading_input');
+            newElement.focus();
+            console.log(newElement)
             // Clear main form input value
             form_input.value = ''
         }
@@ -42,9 +44,34 @@ form_input.addEventListener('keydown', (e) => {
         if (e.keyCode === 32) {
             e.preventDefault();
             // Create input on shortcut
+            createInput('input', 'text', 'h1_option_input', 'expanded_heading_input', 'Expandable Heading 1', 'h1')
+            // Set created input to be focued
+            let newElement = document.getElementById('expanded_heading_input');
+            newElement.focus();
+            // Clear main form input value
+            form_input.value = ''
+        }
+    } else if(e.target.value === '+>>#') {
+        if (e.keyCode === 32) {
+            e.preventDefault();
+            // Create input on shortcut
+            createInput('input', 'text', 'p_option_input', 'expanded_paragraph_input', 'Expandable Paragraph 1', 'p')
+            // Set created input to be focued
+            let newElement = document.getElementById('expanded_paragraph_input');
+            newElement.focus();
+            console.log(newElement)
+            // Clear main form input value
+            form_input.value = ''
+        }
+    } else if(e.target.value === '+#') {
+        if (e.keyCode === 32) {
+            e.preventDefault();
+            // Create input on shortcut
             createInput('input', 'text', 'p_option_input', 'paragraph_input', 'Paragraph 1', 'p')
             // Set created input to be focued
-            document.getElementById('paragraph_input').focus();
+            let newElement = document.getElementById('paragraph_input');
+            newElement.focus();
+            console.log(newElement)
             // Clear main form input value
             form_input.value = ''
         }

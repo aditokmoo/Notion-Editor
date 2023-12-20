@@ -70,6 +70,10 @@
 
 				i {
 					font-size: 2rem;
+
+					&:nth-child(2) {
+						color: #43946C;
+					}
 				}
 			}
 		}
@@ -159,7 +163,6 @@
 			.p_option_input {
 				font-size: 1.6rem;
 				color: #212936;
-				font-weight: 600;
 				width: 100%;
 			}
 		}
