@@ -75,6 +75,54 @@ body {
   margin-top: 5rem; }
   .header .hero_section {
     padding: 1rem; }
+    .header .hero_section .widgets {
+      border: 1px solid #E5E7EB;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem; }
+      .header .hero_section .widgets .left_section {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+        .header .hero_section .widgets .left_section span:nth-child(1) {
+          background-color: #CDECDA;
+          color: #347659;
+          padding: 1rem 1.3rem;
+          border-radius: 5px;
+          font-family: 'Lato', sans-serif;
+          font-weight: bold; }
+        .header .hero_section .widgets .left_section span:nth-child(2) {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #9DA3AE;
+          font-family: 'Lato', sans-serif;
+          border-left: 1px solid #9DA3AE;
+          border-right: 1px solid #9DA3AE;
+          padding: 0 1rem; }
+        .header .hero_section .widgets .left_section span:nth-child(3) {
+          padding: 0 1rem; }
+          .header .hero_section .widgets .left_section span:nth-child(3) img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%; }
+        .header .hero_section .widgets .left_section span:nth-child(4) {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #9DA3AE;
+          font-family: 'Lato', sans-serif;
+          border-left: 1px solid #9DA3AE;
+          padding: 0 1rem;
+          font-size: 1.8rem; }
+      .header .hero_section .widgets .right_section {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem; }
+        .header .hero_section .widgets .right_section i {
+          font-size: 2rem; }
     .header .hero_section .heading_title {
       font-size: 4rem;
       font-family: 'Roboto', sans-serif;
