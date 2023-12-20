@@ -3,6 +3,9 @@
 .nav {
 	padding: 3rem 2rem;
     font-family: 'Poppins', sans-serif;
+    @include responsive('mobile') {
+        display: none;
+    }
 
 	.nav_section {
 		display: flex;
@@ -10,7 +13,7 @@
 		justify-content: space-between;
 
         i {
-            color: #9da3ae;
+            color: $primary_text_color;
         }
 
 		.links {
@@ -37,7 +40,7 @@
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    color: #9da3ae;
+                    color: $primary_text_color;
                     font-size: 1rem;
                     &:first-child {
                         a {
@@ -50,7 +53,7 @@
                     }
 
                     a {
-                        color: #9da3ae;
+                        color: $primary_text_color;
                         font-family: Arial, Helvetica, sans-serif;
                         padding-left: 0.5rem;
                         font-size: 1.6rem;
@@ -77,7 +80,7 @@
                         align-items: center;
                         gap: 1rem;
                         text-decoration: none;
-                        color: #9da3ae;
+                        color: $primary_text_color;
                     }
                 }
             }

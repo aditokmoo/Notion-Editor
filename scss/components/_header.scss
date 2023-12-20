@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap');
-
 .header {
 	margin-top: 5rem;
 
@@ -100,6 +98,7 @@
 				position: relative;
 				color: #212936;
 				font-weight: 600;
+				margin: 1rem 0;
 				
 				&:hover {
 					&::before {
@@ -122,13 +121,14 @@
 				margin: 2rem 0;
 				color: #4D5562;
 				font-size: 1.6rem;
+				font-weight: 600;
 				
 				&:hover {
 					&::before {
-						content: "\f060";
+						content: "\f0c9";
 						font-family: 'Font Awesome 5 Free';
 						position: absolute;
-						top: 1rem;
+						top: 0.2rem;
 						left: -2.3rem;
 						width: 0.5rem;
 						height: 0.5rem;

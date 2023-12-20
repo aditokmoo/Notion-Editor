@@ -21,7 +21,7 @@ export default function createInput(elementName, elementType, elementClass, elem
     form_input.style.display = 'none'
     // Add Event Listener on input
     input.addEventListener('keypress', (e) => {
-        if (e.keyCode === 13) {
+        if (e.key === 'Enter') {
             e.preventDefault();
             createText(elementTag, elementTag, elementTag, e.target.value)
             const newText = document.getElementById(elementTag);

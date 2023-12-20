@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *,
 *::before,
 *::after {
@@ -23,6 +23,9 @@ body {
 .nav {
   padding: 3rem 2rem;
   font-family: 'Poppins', sans-serif; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      display: none; } }
   .nav .nav_section {
     display: flex;
     align-items: center;
@@ -141,7 +144,8 @@ body {
       font-family: 'Roboto', sans-serif;
       position: relative;
       color: #212936;
-      font-weight: 600; }
+      font-weight: 600;
+      margin: 1rem 0; }
       .header .hero_section .form_section .h1:hover::before {
         content: "\f0c9";
         font-family: 'Font Awesome 5 Free';
@@ -157,12 +161,13 @@ body {
       position: relative;
       margin: 2rem 0;
       color: #4D5562;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      font-weight: 600; }
       .header .hero_section .form_section .p:hover::before {
-        content: "\f060";
+        content: "\f0c9";
         font-family: 'Font Awesome 5 Free';
         position: absolute;
-        top: 1rem;
+        top: 0.2rem;
         left: -2.3rem;
         width: 0.5rem;
         height: 0.5rem;

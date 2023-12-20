@@ -1,11 +1,13 @@
+// Define main elements
 const form_input = document.getElementById('form_input');
 const form_modal = document.getElementById('form_modal');
+// Imports
 import { heading_options, paragraph_options } from "./utils/options.js";
-import createInput from "./utils/createInput.js";
 import modalTheme from "./utils/modalTheme.js";
 import handleOptionClick from "./utils/handleOptionClick.js";
+import handleShortcuts from "./utils/handleShortcuts.js";
 
-// Add Event Listener
+// Event listener on main form and modal
 form_input.addEventListener('input', (e) => {
     e.preventDefault();
 	if (e.target.value === '/1') {
@@ -27,53 +29,15 @@ form_input.addEventListener('input', (e) => {
 	}
 });
 
+// Event listener for shortcuts
 form_input.addEventListener('keydown', (e) => {
     if(e.target.value === '#') {
-        if (e.keyCode === 32) {
-            e.preventDefault();
-            // Create input on shortcut
-            createInput('input', 'text', 'h1_option_input', 'heading_input', 'Heading 1', 'h1')
-            // Set created input to be focued
-            let newElement = document.getElementById('heading_input');
-            newElement.focus();
-            console.log(newElement)
-            // Clear main form input value
-            form_input.value = ''
-        }
+        handleShortcuts(e, 'input', 'text', 'h1_option_input', 'heading_input', 'Heading 1', 'h1');
     } else if(e.target.value === '>>#') {
-        if (e.keyCode === 32) {
-            e.preventDefault();
-            // Create input on shortcut
-            createInput('input', 'text', 'h1_option_input', 'expanded_heading_input', 'Expandable Heading 1', 'h1')
-            // Set created input to be focued
-            let newElement = document.getElementById('expanded_heading_input');
-            newElement.focus();
-            // Clear main form input value
-            form_input.value = ''
-        }
-    } else if(e.target.value === '+>>#') {
-        if (e.keyCode === 32) {
-            e.preventDefault();
-            // Create input on shortcut
-            createInput('input', 'text', 'p_option_input', 'expanded_paragraph_input', 'Expandable Paragraph 1', 'p')
-            // Set created input to be focued
-            let newElement = document.getElementById('expanded_paragraph_input');
-            newElement.focus();
-            console.log(newElement)
-            // Clear main form input value
-            form_input.value = ''
-        }
+        handleShortcuts(e, 'input', 'text', 'h1_option_input', 'expanded_heading_input', 'Expandable Heading 1', 'h1');
     } else if(e.target.value === '+#') {
-        if (e.keyCode === 32) {
-            e.preventDefault();
-            // Create input on shortcut
-            createInput('input', 'text', 'p_option_input', 'paragraph_input', 'Paragraph 1', 'p')
-            // Set created input to be focued
-            let newElement = document.getElementById('paragraph_input');
-            newElement.focus();
-            console.log(newElement)
-            // Clear main form input value
-            form_input.value = ''
-        }
+        handleShortcuts(e, 'input', 'text', 'p_option_input', 'paragraph_input', 'Paragraph 1', 'p');
+    } else if(e.target.value === '+>>#') {
+        handleShortcuts(e, 'input', 'text', 'p_option_input', 'expanded_paragraph_input', 'Expandable Paragraph 1', 'p');
     }
 })
