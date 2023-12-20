@@ -4,7 +4,7 @@ The Notion Editor is a project aimed at providing users with essential formattin
 
 ## Available Options:
 
-1. **Heading:** : Users can create regular headings. These headings follow the conventional styling without any expanded options attached. To create a regular heading type: "/1" and select the first option "Heading 1" Also there is a shortcut just type: `# + space`.
+1. **Heading:** : Users can create regular headings. These headings follow the conventional styling without any expanded options attached. To create a regular heading type: `/1` and select the first option "Heading 1" Also there is a shortcut just type: `# + space`.
 
 2. **Expanded Heading:** Users for now can't create expanded headings because they were not provided in the design but for now they are just simulating the functionality of regular Headings. You can still test it when typing `/1` or using the shortcut `>># + space`.
 
