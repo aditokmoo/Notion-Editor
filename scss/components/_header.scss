@@ -92,8 +92,9 @@
 			line-height: 1.6;
 		}
 
-		.form_section {
+		.form_section {	
 			.h1 {
+				outline: none;
 				font-family: 'Roboto', sans-serif;
 				position: relative;
 				color: #212936;
@@ -122,6 +123,7 @@
 				color: #4D5562;
 				font-size: 1.6rem;
 				font-weight: 600;
+				outline: none;
 				
 				&:hover {
 					&::before {

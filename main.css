@@ -141,6 +141,7 @@ body {
       color: #4d5562;
       line-height: 1.6; }
     .header .hero_section .form_section .h1 {
+      outline: none;
       font-family: 'Roboto', sans-serif;
       position: relative;
       color: #212936;
@@ -162,7 +163,8 @@ body {
       margin: 2rem 0;
       color: #4D5562;
       font-size: 1.6rem;
-      font-weight: 600; }
+      font-weight: 600;
+      outline: none; }
       .header .hero_section .form_section .p:hover::before {
         content: "\f0c9";
         font-family: 'Font Awesome 5 Free';
