@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #ffffff;
+  font-size: 1.6rem; }
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto; }
+
+.nav {
+  padding: 3rem 2rem;
+  font-family: 'Poppins', sans-serif; }
+  .nav .nav_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .nav .nav_section i {
+      color: #9da3ae; }
+    .nav .nav_section .links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 0.5rem; }
+      .nav .nav_section .links a {
+        text-decoration: none; }
+    .nav .nav_section .left_links {
+      display: flex;
+      align-items: center;
+      gap: 3rem; }
+      .nav .nav_section .left_links .links {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+        .nav .nav_section .left_links .links li {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          color: #9da3ae;
+          font-size: 1rem; }
+          .nav .nav_section .left_links .links li:first-child a {
+            text-decoration: underline; }
+          .nav .nav_section .left_links .links li i.ph {
+            font-size: 1.8rem; }
+          .nav .nav_section .left_links .links li a {
+            color: #9da3ae;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 0.5rem;
+            font-size: 1.6rem; }
+    .nav .nav_section .right_links .links li:last-child a {
+      color: #3565A9;
+      font-weight: 600;
+      border-left: 1px solid #E5E7EB; }
+    .nav .nav_section .right_links .links li a {
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: #9da3ae; }
+
+.header {
+  margin-top: 5rem; }
+  .header .hero_section {
+    padding: 1rem; }
+    .header .hero_section .heading_title {
+      font-size: 4rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      letter-spacing: .1rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid #ddd; }
+    .header .hero_section .heading_text {
+      padding: 3rem 0;
+      font-family: 'Lato', sans-serif;
+      color: #4d5562;
+      line-height: 1.6; }
+    .header .hero_section .form_section .h1 {
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      color: #212936;
+      font-weight: 600; }
+      .header .hero_section .form_section .h1:hover::before {
+        content: "\f0c9";
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 1rem;
+        left: -2.3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        font-size: 1.5rem;
+        color: #D2D5DA; }
+    .header .hero_section .form_section .p {
+      font-family: 'Lato', sans-serif;
+      position: relative;
+      margin: 2rem 0;
+      color: #4D5562;
+      font-size: 1.6rem; }
+      .header .hero_section .form_section .p:hover::before {
+        content: "\f060";
+        font-family: 'Font Awesome 5 Free';
+        position: absolute;
+        top: 1rem;
+        left: -2.3rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        font-size: 1.5rem;
+        color: #D2D5DA; }
+    .header .hero_section .form_section input {
+      font-family: 'Lato', sans-serif;
+      padding: 1rem 0;
+      width: 40rem;
+      border: 0;
+      outline: none;
+      font-size: 1.7rem;
+      margin: 1rem 0; }
+      .header .hero_section .form_section input::placeholder {
+        color: #4d5562;
+        opacity: .7; }
+    .header .hero_section .form_section .h1_option_input {
+      font-size: 3.5rem;
+      color: #212936;
+      font-weight: 600;
+      width: 100%; }
+    .header .hero_section .form_section .p_option_input {
+      font-size: 1.6rem;
+      color: #212936;
+      font-weight: 600;
+      width: 100%; }
+    .header .hero_section .form_modal {
+      border: 1px solid #F3F4F6;
+      border-radius: 6px;
+      box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+      max-width: 45rem;
+      height: 45rem;
+      overflow-y: scroll;
+      display: none;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .header .hero_section .form_modal.active {
+        display: block; }
+      .header .hero_section .form_modal::-webkit-scrollbar {
+        width: 10px; }
+      .header .hero_section .form_modal::-webkit-scrollbar-track {
+        background: #f1f1f1; }
+      .header .hero_section .form_modal::-webkit-scrollbar-thumb {
+        background: #888; }
+      .header .hero_section .form_modal::-webkit-scrollbar-thumb:hover {
+        background: #555; }
+      .header .hero_section .form_modal .modal_header {
+        padding: 1rem; }
+        .header .hero_section .form_modal .modal_header .form_modal_title {
+          font-family: 'Lato', sans-serif; }
+        .header .hero_section .form_modal .modal_header .form_modal_text {
+          margin: 1rem 0;
+          color: #4d5562;
+          font-family: 'Lato', sans-serif; }
+        .header .hero_section .form_modal .modal_header .form_modal_filter_text {
+          display: block;
+          margin: 2rem 0;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: #4d5562;
+          font-family: 'Lato', sans-serif; }
+          .header .hero_section .form_modal .modal_header .form_modal_filter_text .keyword {
+            background-color: #3565a9;
+            color: #fff;
+            padding: .3rem .5rem;
+            border-radius: 6px; }
+      .header .hero_section .form_modal .option_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none; }
+        .header .hero_section .form_modal .option_list li {
+          padding: 2rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: #9DA3AE; }
+          .header .hero_section .form_modal .option_list li .option_icon {
+            font-size: 4rem; }
+          .header .hero_section .form_modal .option_list li:hover {
+            background-color: #F3F4F6; }
+          .header .hero_section .form_modal .option_list li .flex {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.4; }
+            .header .hero_section .form_modal .option_list li .flex .option_name {
+              font-size: 2rem;
+              color: #000;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 600; }
+            .header .hero_section .form_modal .option_list li .flex .option_shortcut {
+              font-size: 1.4rem;
+              font-family: 'Lato', sans-serif; }

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap');
+
+.header {
+	margin-top: 5rem;
+
+	.hero_section {
+		padding: 1rem;
+
+		.heading_title {
+			font-size: 4rem;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			letter-spacing: .1rem;
+			padding: 2rem 0;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.heading_text {
+			padding: 3rem 0;
+			font-family: 'Lato', sans-serif;
+			color: #4d5562;
+			line-height: 1.6;
+		}
+
+		.form_section {
+			.h1 {
+				font-family: 'Roboto', sans-serif;
+				position: relative;
+				color: #212936;
+				font-weight: 600;
+				
+				&:hover {
+					&::before {
+						content: "\f0c9";
+						font-family: 'Font Awesome 5 Free';
+						position: absolute;
+						top: 1rem;
+						left: -2.3rem;
+						width: 0.5rem;
+						height: 0.5rem;
+						font-size: 1.5rem;
+						color: #D2D5DA;
+					}
+				}
+			}
+
+			.p {
+				font-family: 'Lato', sans-serif;
+				position: relative;
+				margin: 2rem 0;
+				color: #4D5562;
+				font-size: 1.6rem;
+				
+				&:hover {
+					&::before {
+						content: "\f060";
+						font-family: 'Font Awesome 5 Free';
+						position: absolute;
+						top: 1rem;
+						left: -2.3rem;
+						width: 0.5rem;
+						height: 0.5rem;
+						font-size: 1.5rem;
+						color: #D2D5DA;
+					}
+				}
+			}
+
+			input {
+				font-family: 'Lato', sans-serif;
+				padding: 1rem 0;
+				width: 40rem;
+				border: 0;
+				outline: none;
+				font-size: 1.7rem;
+				margin: 1rem 0;
+
+				&::placeholder {
+					color: #4d5562;
+					opacity: .7;
+				}
+			}
+
+			.h1_option_input {
+				font-size: 3.5rem;
+				color: #212936;
+				font-weight: 600;
+				width: 100%;
+			}
+
+			.p_option_input {
+				font-size: 1.6rem;
+				color: #212936;
+				font-weight: 600;
+				width: 100%;
+			}
+		}
+
+		.form_modal {
+            border: 1px solid #F3F4F6;
+			border-radius: 6px;
+			box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+			-webkit-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 0px 0px 17px -6px rgba(0, 0, 0, 0.75);
+			max-width: 45rem;
+			height: 45rem;
+            overflow-y: scroll;
+			display: none;
+
+			&.active {
+				display: block;
+			}
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+            
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+			.modal_header {
+                padding: 1rem;
+
+				.form_modal_title {
+					font-family: 'Lato', sans-serif;
+				}
+
+				.form_modal_text {
+					margin: 1rem 0;
+					color: #4d5562;
+					font-family: 'Lato', sans-serif;
+				}
+
+				.form_modal_filter_text {
+					display: block;
+					margin: 2rem 0;
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					color: #4d5562;
+					font-family: 'Lato', sans-serif;
+
+					.keyword {
+						background-color: #3565a9;
+						color: #fff;
+						padding: .3rem .5rem;
+						border-radius: 6px;
+					}
+				}
+			}
+
+			.option_list {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				list-style: none;
+                
+                li {
+                    padding: 2rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    color: #9DA3AE;
+
+                    .option_icon {
+                        font-size: 4rem;
+                    }
+
+                    &:hover {
+                        background-color: #F3F4F6;
+                    }
+
+                    .flex {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 1.4;
+
+                        .option_name {
+                            font-size: 2rem;
+                            color: #000;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 600;
+                        }
+
+                        .option_shortcut {
+                            font-size: 1.4rem;
+                            font-family: 'Lato', sans-serif;
+                        }
+                    }
+                }
+            }
+		}
+	}
+}
